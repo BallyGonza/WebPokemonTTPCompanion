@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <title>Pokémon TTP Companion | Map</title>
+    <meta name="description"
+        content="Sector  donde se encontrarán todos los sectores disponibles en el mundo de Pokémon TTP Companion.">
+    <meta name="keywords" content="Pokémon, Juegos de mesa, TTP Companion, Juegos de Rol, Estrategia">
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/pokeball.png" />
+</head>
+
+<body>
+    <div class="pokeball_background"></div>
+    <header>
+        <a href="index.html"><img src="assets/images/PokemonTTPCompanionLogo.png" alt="Logo Pokemon TTP Comanion"
+                class="logo"></a>
+        <div class="site__title">Pokémon TTP Companion</div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pokedex.html">Pokédex</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" aria-current="page" href="#"
+                            id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Map
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="map.html">Kanto</a></li>
+                            <li><a class="dropdown-item" href="#">Pueblo</a></li>
+                            <li><a class="dropdown-item" href="#">Ciudad Normal</a></li>
+                            <li><a class="dropdown-item" href="#">Ciudad Tierra</a></li>
+                            <li><a class="dropdown-item" href="#">Ciudad Planta</a></li>
+                            <li><a class="dropdown-item" href="#">Ciudad Bicho</a></li>
+                            <li><a class="dropdown-item" href="#">Ciudad Pelea</a></li>
+                            <li><a class="dropdown-item" href="#">Ciudad Volador</a></li>
+                            <li><a class="dropdown-item" href="#">Ciudad Oscuro</a></li>
+                            <li><a class="dropdown-item" href="#">Ciudad Hielo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="map">
+
+        <div class="title">Map</div>
+        <div class="container-map">
+            <div class="container-map__img">
+                <div class="container-map__button--ice"><a href="#ciudadHielo"><input
+                            class="button--ice btn btn-primary" type="button" value="Hielo"></a></div>
+                <div class="container-map__button--dark"><a href="#ciudadOscuro"><input
+                            class="button--dark btn btn-primary" type="button" value="Oscuro"></a></div>
+                <div class="container-map__button--flying"><a href="#ciudadVolador"><input
+                            class="button--flying btn btn-primary" type="button" value="Volador"></a></div>
+                <div class="container-map__button--fighting"><a href="#ciudadPelea"><input
+                            class="button--fighting btn btn-primary" type="button" value="Pelea"></a></div>
+                <div class="container-map__button--bug"><a href="#ciudadBicho"><input
+                            class="button--bug btn btn-primary" type="button" value="Bicho"></a></div>
+                <div class="container-map__button--grass"><a href="#ciudadPlanta"><input
+                            class="button--grass btn btn-primary" type="button" value="Planta"></a></div>
+                <div class="container-map__button--ground"><a href="#ciudadTierra"><input
+                            class="button--ground btn btn-primary" type="button" value="Tierra"></a></div>
+                <div class="container-map__button--normal"><a href="#ciudadNormal"><input
+                            class="button--normal btn btn-primary" type="button" value="Normal"></a></div>
+                <div class="container-map__button--town"><a href="#ciudadPueblo"><input
+                            class="button--town btn btn-primary" type="button" value="Pueblo"></a></div>
+            </div>
+
+        </div>
+
+        <div class="card-town">
+            <div class="card-town__title">Town</div>
+            <div class="card-town__description">Es un pueblo situado en el suroeste de Kanto. Los entrenadores de Kanto
+                inician sus viajes Pokémon aquí.</div>
+            <div class="card__shop border border-dark">
+                <div class="shop__title">Shop</div>
+                <div class="shop__items">
+                    <!-- <div class="items__title ">
+                        <div class="items__title--item">Item</div>
+                        <div class="items__title--name">Name</div>
+                        <div class="items__title--detail">Detail</div>
+                        <div class="items__title--price">Price</div>
+                    </div> -->
+                    <div class="items__pokeball">
+                        <img class="items__pokeball--img" src="assets/images/citys/shop/pokeball.png" alt="">
+                        <div class="items__pokeball--name">Pokéball</div>
+                        <div class="items__pokeball--detail">A Poké Ball is a type of item that is critical to a
+                            Trainer's quest, used
+                            for catching and
+                            storing
+                            Pokémon.</div>
+                        <div class="items__pokeball--price">200 <img class="items__price--coinImg"
+                                src="assets/images/coin.png" alt=""></div>
+                    </div>
+                    <div class="items__potion">
+                        <img class="items__potion--img" src="assets/images/citys/shop/potion.png" alt="">
+                        <div class="items__potion--name">Potion</div>
+                        <div class="items__potion--detail">Restores HP that have been lost in battle by 20 HP.</div>
+                        <div class="items__potion--price">300<img class="items__price--coinImg"
+                                src="assets/images/coin.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-city">
+            <div class="card-city__title">Normal City</div>
+            <div class="card-city__description">Es una gran ciudad ubicada en la parte oeste de Johto. Es la capital de
+                la región de Johto y la cuarta ciudad
+                más grande del Mundo Pokémon. Muchos entrenadores llegan a esta ciudad para ganar la medalla Planicie de
+                Whitney, la líder del gimnasio, que se especializa en Pokémon de tipo normal.</div>
+            <div class="card__shop border border-dark">
+                <div class="shop__title">Shop</div>
+                <div class="shop__items">
+                    <!-- <div class="items__title">
+                        <div class="items__title--item">Item</div>
+                        <div class="items__title--name">Name</div>
+                        <div class="items__title--detail">detail</div>
+                        <div class="items__title--price">price</div>
+                    </div> -->
+                    <div class="items__pokeball">
+                        <img class="items__pokeball--img" src="assets/images/citys/shop/pokeball.png" alt="">
+                        <div class="items__pokeball--name">Pokéball</div>
+                        <div class="items__pokeball--detail">A Poké Ball is a type of item that is critical to a
+                            Trainer's quest, used
+                            for catching and
+                            storing
+                            Pokémon.</div>
+                        <div class="items__pokeball--price">200 <img class="items__price--coinImg"
+                                src="assets/images/coin.png" alt=""></div>
+                    </div>
+                    <div class="items__potion">
+                        <img class="items__potion--img" src="assets/images/citys/shop/potion.png" alt="">
+                        <div class="items__potion--name">Potion</div>
+                        <div class="items__potion--detail">Restores HP that have been lost in battle by 20 HP.</div>
+                        <div class="items__potion--price">300<img class="items__price--coinImg"
+                                src="assets/images/coin.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-city__gym">
+                <div class="gym__title">Gym Leader</div>
+                <div class="gym__leader">
+                    <img class="leader__img" src="assets/images/leaders/profile_leader/VSWhitney.png" alt="">
+                    <div class="leader__description">
+                        <div class="leader__description--name">Whitney</div>
+                        <div class="leader__description--phrase">"¡La belleza explosiva!"</div>
+                        <div class="leader__description--badge">Plain Badge<img class="gym__badge--img"
+                                src="assets/images/leaders/badges/Plainbadge.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gym__team">
+                <div class="team__title">
+                    Team
+                </div>
+                <div class="team__pokemon">
+                    <div class="pokemon-card__pokemon">
+                        <img class="pokemon-card__img" src="assets/images/pokemons/gifs/blastoise.gif" alt="">
+                        <div class="pokemon-card__details">
+                            <div class="pokemon-card__details--name">Lickytung</div>
+                            <img class="pokemon-card__details--type" src="assets/images/pokemons/types/NORMAL1.png"
+                                alt="">
+                            <div class="pokemon-card__details--description">Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Qui necessitatibus at deleniti.
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="card-footer text-muted text-center">
+        <div class="footer__background"></div>
+        <p class="footer__texto">Pokémon TTP Companion 2021 <br>Derechos reservados por The Pokémon Company
+        </p>
+    </footer>
+
+</body>
+
+</html>

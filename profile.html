@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="assets/images/pokeball.png" />
+  <title>Pokémon TTP Companion | Profile</title>
+  <meta name="description"
+    content="Perfil donde definiras atributos y caracteristicas de tu pesonaje al momento de jugar Pokémon TTP Companion">
+  <meta name="keywords" content="Pokémon, Juegos de mesa, TTP Companion, Juegos de Rol, Estrategia">
+
+</head>
+
+<body id="profile">
+  <div class="pokeball_background"></div>
+  <header>
+    <a href="index.html"><img src="assets/images/PokemonTTPCompanionLogo.png" alt="Logo Pokemon TTP Comanion"
+        class="logo"></a>
+    <div class="site__title">Pokémon TTP Companion</div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pokedex.html">Pokédex</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Map
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="map.html">Kanto</a></li>
+              <li><a class="dropdown-item" href="#">Pueblo</a></li>
+              <li><a class="dropdown-item" href="#">Ciudad Normal</a></li>
+              <li><a class="dropdown-item" href="#">Ciudad Tierra</a></li>
+              <li><a class="dropdown-item" href="#">Ciudad Planta</a></li>
+              <li><a class="dropdown-item" href="#">Ciudad Bicho</a></li>
+              <li><a class="dropdown-item" href="#">Ciudad Pelea</a></li>
+              <li><a class="dropdown-item" href="#">Ciudad Volador</a></li>
+              <li><a class="dropdown-item" href="#">Ciudad Oscuro</a></li>
+              <li><a class="dropdown-item" href="#">Ciudad Hielo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="title">
+    My Profile
+  </div>
+
+  <div class="profile-card">
+    <img class="profile-card__picture" src="assets/images/profile/GaryOak.png" alt="img gary">
+    <div class="profile-card__details">
+      <div class="details__name">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text" id="inputGroup-sizing-lg">Name:</span>
+          <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg">
+        </div>
+      </div>
+      <div class="details__gold">
+        <div class="input-group input-group-lg">
+          <span class="input-group-text" id="inputGroup-sizing-lg">Gold:</span>
+          <input type="number" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg">
+        </div>
+      </div>
+    </div>
+    <div class="profile-card__badges">
+      <div class="badges__title">Badges</div>
+      <div class="badges-card">
+        <img class="badges-card__img" src="assets/images/leaders/badges/Plainbadge.png" alt="">
+        <div class="badges-card__name">Plain</div>
+        <div class="badges-card__check"><input type="checkbox" name="" id=""></div>
+      </div>
+    </div>
+    <div class="profile-card__items">
+      <div class="items__title">Items</div>
+      <div class="item-card">
+        <img class="item-card__img" src="assets/images/citys/shop/pokeball.png" alt="">
+        <div class="item-card__name">Pokéball</div>
+        <div class="item-card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat odio
+          cupiditate labore ipsum. Vitae dolorem eum voluptas.</div>
+        <input class="item-card__cant" type="number">
+      </div>
+    </div>
+    <div class="profile-card__team">
+      <div class="team__title">
+        Team
+      </div>
+      <div class="team__card" style="width: 18rem;">
+        <div class="card__select">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Pokémon</option>
+            <option value="1">Bulbasaur</option>
+            <option value="2">Ivysaur</option>
+            <option value="3">Venusaur</option>
+            <option value="3">Squirtle</option>
+            <option value="3">Wartortle</option>
+            <option value="3">Blastoise</option>
+          </select>
+          <img class="card__img--pokemon" src="assets/images/pokemons/gifs/blastoise.gif" alt="">
+        </div>
+      </div>
+      <div class="team__card" style="width: 18rem;">
+        <div class="card__select">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Pokémon</option>
+            <option value="1">Bulbasaur</option>
+            <option value="2">Ivysaur</option>
+            <option value="3">Venusaur</option>
+            <option value="3">Squirtle</option>
+            <option value="3">Wartortle</option>
+            <option value="3">Blastoise</option>
+          </select>
+          <img class="card__img--pokemon" src="assets/images/pokemons/gifs/blastoise.gif" alt="">
+        </div>
+      </div>
+      <div class="team__card" style="width: 18rem;">
+        <div class="card__select">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Pokémon</option>
+            <option value="1">Bulbasaur</option>
+            <option value="2">Ivysaur</option>
+            <option value="3">Venusaur</option>
+            <option value="3">Squirtle</option>
+            <option value="3">Wartortle</option>
+            <option value="3">Blastoise</option>
+          </select>
+          <img class="card__img--pokemon" src="assets/images/pokemons/gifs/blastoise.gif" alt="">
+        </div>
+      </div>
+      <div class="team__card" style="width: 18rem;">
+        <div class="card__select">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Pokémon</option>
+            <option value="1">Bulbasaur</option>
+            <option value="2">Ivysaur</option>
+            <option value="3">Venusaur</option>
+            <option value="3">Squirtle</option>
+            <option value="3">Wartortle</option>
+            <option value="3">Blastoise</option>
+          </select>
+          <img class="card__img--pokemon" src="assets/images/pokemons/gifs/blastoise.gif" alt="">
+        </div>
+      </div>
+      <div class="team__card" style="width: 18rem;">
+        <div class="card__select">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Pokémon</option>
+            <option value="1">Bulbasaur</option>
+            <option value="2">Ivysaur</option>
+            <option value="3">Venusaur</option>
+            <option value="3">Squirtle</option>
+            <option value="3">Wartortle</option>
+            <option value="3">Blastoise</option>
+          </select>
+          <img class="card__img--pokemon" src="assets/images/pokemons/gifs/blastoise.gif" alt="">
+        </div>
+      </div>
+      <div class="team__card" style="width: 18rem;">
+        <div class="card__select">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select Pokémon</option>
+            <option value="1">Bulbasaur</option>
+            <option value="2">Ivysaur</option>
+            <option value="3">Venusaur</option>
+            <option value="3">Squirtle</option>
+            <option value="3">Wartortle</option>
+            <option value="3">Blastoise</option>
+          </select>
+          <img class="card__img--pokemon" src="assets/images/pokemons/gifs/blastoise.gif" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="profile-card__trainers">
+      <div class="trainers__title">
+        Trainers
+      </div>
+      <div class="trainers__container">
+        <div class="trainers-a__card" style="width: 18rem;">
+          <img class="card__img--trainer" src="assets/images/trainersIcon/AttLogosTrainers_C1.png" alt="">
+          <div class="card__select">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select Trainer</option>
+              <option value="1">Potion</option>
+            </select>
+          </div>
+        </div>
+        <div class="trainers-b__card" style="width: 18rem;">
+          <img class="card__img--trainer" src="assets/images/trainersIcon/AttLogosTrainers_A1.png" alt="">
+          <div class="card__select">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select Trainer</option>
+              <option value="1">Potion</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="trainers__container">
+        <div class="trainers-a__card" style="width: 18rem;">
+          <img class="card__img--trainer" src="assets/images/trainersIcon/AttLogosTrainers_C2.png" alt="">
+          <div class="card__select">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select Trainer</option>
+              <option value="1">Potion</option>
+            </select>
+          </div>
+        </div>
+        <div class="trainers-b__card" style="width: 18rem;">
+          <img class="card__img--trainer" src="assets/images/trainersIcon/AttLogosTrainers_A2.png" alt="">
+          <div class="card__select">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select Trainer</option>
+              <option value="1">Potion</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="trainers__container">
+        <div class="trainers-a__card" style="width: 18rem;">
+          <img class="card__img--trainer" src="assets/images/trainersIcon/AttLogosTrainers_C3.png" alt="">
+          <div class="card__select">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select Trainer</option>
+              <option value="1">Potion</option>
+            </select>
+          </div>
+        </div>
+        <div class="trainers-b__card" style="width: 18rem;">
+          <img class="card__img--trainer" src="assets/images/trainersIcon/AttLogosTrainers_S.png" alt="">
+          <div class="card__select">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select Trainer</option>
+              <option value="1">Potion</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="card-footer text-muted text-center">
+    <p class="footer__texto">Pokémon TTP Companion 2021 <br>Derechos reservados por The Pokémon Company
+    </p>
+    <div class="footer__background"></div>
+  </footer>
+
+</body>
+
+</html>
