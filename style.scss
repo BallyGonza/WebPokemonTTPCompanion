@@ -1,14 +1,21 @@
 $colorTown: black;
-$colorNormal: gray;
-$colorGround: burlywood;
-$colorGrass: green;
-$colorBug: chartreuse;
-$colorFight: brown;
-$colorDark: blueviolet;
-$colorIce: cyan;
-$colorFly: cornflowerblue;
+$colorNormal: #929BA3;
+$colorGround: #E97333;
+$colorGrass: #35C04A;
+$colorBug: #84C400;
+$colorFight: #831b3f;
+$colorGhost: #4B6AB3;
+$colorIce: #4BD2C1;
+$colorFly: #8AACE4;
 
-$color_whitney: #D15F78;
+$color_whitney: $colorNormal;
+$color_erika: $colorGrass;
+$color_brock: $colorGround;
+$color_bugsy: $colorBug;
+$color_falkner: $colorFly;
+$color_pryce: $colorIce;
+$color_morty: $colorGhost;
+$color_chuck: $colorFight;
 
 $font-size-cardTitle: 8vh;
 $font-size-gymTitle: 6vh;
@@ -254,13 +261,14 @@ $font-size-description: 2vh;
             grid-template-areas:
                 "details details img img team team"
                 "badges badges img img team team"
-                "badges badges img img items items"
+                "trainers trainers img img items items"
                 "trainers trainers img img items items";
             grid-template-rows: repeat(4, auto);
             grid-template-columns: repeat(6, 1fr);
 
             .profile-card__picture {
                 grid-area: img;
+                margin-left: 9em;
             }
 
             .profile-card__details {
@@ -289,8 +297,10 @@ $font-size-description: 2vh;
                 }
 
                 .badges-card {
+                    padding: 1em;
                     display: flex;
                     align-items: center;
+                    justify-content: space-between;
 
                     .badges-card__img {
                         width: 3vh;
@@ -298,12 +308,10 @@ $font-size-description: 2vh;
 
                     .badges-card__name {
                         font-size: 20px;
-                        margin-left: 5vh;
+                        // margin-left: 5vh;
                     }
 
-                    .badges-card__check {
-                        margin-left: 5vh;
-                    }
+                    .badges-card__check {}
 
                 }
             }
@@ -347,6 +355,7 @@ $font-size-description: 2vh;
 
             .profile-card__team {
                 grid-area: team;
+                margin-left: 12em;
                 margin-top: 2em;
                 margin-bottom: 2em;
 
@@ -807,9 +816,12 @@ $font-size-description: 2vh;
 
         .card__shop {
             grid-area: shop;
+            border-radius: 25px;
+            background: rgb(68, 90, 119);
+
 
             .shop__title {
-                color: rgb(46, 36, 185);
+                color: white;
                 font-size: 5vh;
                 padding-top: 30px;
                 padding-left: 50px;
@@ -857,6 +869,7 @@ $font-size-description: 2vh;
                         font-weight: bold;
                         align-items: center;
                         margin-left: 68px;
+                        color: white;
 
                     }
 
@@ -866,14 +879,15 @@ $font-size-description: 2vh;
                         align-items: center;
                         padding-left: 50px;
                         padding-right: 40px;
-
-
+                        color: white;
                     }
 
                     .items__pokeball--price {
                         display: flex;
                         align-items: center;
                         padding-right: 50px;
+                        color: white;
+
                     }
                 }
 
@@ -894,7 +908,7 @@ $font-size-description: 2vh;
                         font-weight: bold;
                         align-items: center;
                         margin-left: 90px;
-
+                        color: white;
                     }
 
                     .items__potion--detail {
@@ -903,14 +917,14 @@ $font-size-description: 2vh;
                         align-items: center;
                         padding-left: 50px;
                         padding-right: 40px;
-
-
+                        color: white;
                     }
 
                     .items__potion--price {
                         display: flex;
                         align-items: center;
                         padding-right: 50px;
+                        color: white;
                     }
                 }
             }
@@ -918,6 +932,7 @@ $font-size-description: 2vh;
 
         //!TODO
         .card-city {
+            margin-top: 10em;
             display: grid;
             grid-template-areas:
                 ". city-title city-title city-title . . . . ."
@@ -928,7 +943,6 @@ $font-size-description: 2vh;
             grid-template-columns: repeat(9, 1fr);
 
             .card-city__title {
-                color: $colorNormal;
                 grid-area: city-title;
                 font-size: $font-size-cardTitle;
             }
@@ -959,10 +973,8 @@ $font-size-description: 2vh;
                     .leader__description {
 
                         .leader__description--name {
-                            color: $color_whitney;
                             font-size: $font-size-leaderName;
                             border-bottom: 2px solid;
-                            border-color: $color_whitney;
                         }
 
                         .leader__description--phrase {
@@ -990,7 +1002,6 @@ $font-size-description: 2vh;
 
                 .pokemon-card__pokemon {
                     border-left: 6px solid;
-                    border-color: $colorNormal;
                     display: flex;
                     align-items: center;
 
@@ -1000,6 +1011,7 @@ $font-size-description: 2vh;
                         display: flex;
                         align-items: center;
                         justify-content: space-around;
+                        color: black !important;
 
                         .pokemon-card__details--name {
                             padding: 4%;
@@ -1099,3 +1111,44 @@ $font-size-description: 2vh;
 }
 
 // general
+
+.normal {
+    color: $color_whitney;
+    border-color: $color_whitney;
+}
+
+.grass {
+    color: $color_erika;
+    border-color: $color_erika;
+}
+
+.fight {
+    color: $color_chuck;
+    border-color: $color_chuck;
+}
+
+.ground {
+    color: $color_brock;
+    border-color: $color_brock;
+}
+
+.bug {
+    color: $color_bugsy;
+    border-color: $color_bugsy;
+}
+
+.dark {
+    color: $color_morty;
+    border-color: $color_morty;
+}
+
+
+.flying {
+    color: $color_falkner;
+    border-color: $color_falkner;
+}
+
+.ice {
+    color: $color_pryce;
+    border-color: $color_pryce;
+}
