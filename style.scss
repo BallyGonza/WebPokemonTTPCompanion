@@ -1434,19 +1434,22 @@ $font-size-description: 2vh;
             .container-map__img {
                 display: grid;
                 grid-template-areas:
+                    ". . . . . . . ice ."
+                    ". . dark . . . . . ."
+                    ". . . . . . . . ."
+                    ". . . . . . . . ."
+                    ". fighting . . . . flying . ."
                     ". . . . . . . . ."
                     ". . . . . . . . ."
                     ". . . . . . . . ."
+                    ". . . bug . . . . ."
                     ". . . . . . . . ."
-                    ". . . . . . . . ."
-                    ". . . . . . . . ."
-                    ". . . . . . . . ."
-                    ". . . . . . . . ."
-                    ". . . . . . . . ."
-                    ". . . . . . . . ."
+                    "ground . . . . . . grass ."
+                    ". . . . normal . . . ."
+                    ". . . . town . . . ."
                 ;
-                grid-template-rows: repeat(12, auto);
-                grid-template-columns: repeat(8, 1fr);
+                grid-template-rows: repeat(15, 4vh);
+                grid-template-columns: repeat(8, 5vh);
                 background-image: url(assets/images/map.jpeg);
                 background-size: cover;
                 width: 375px;
@@ -1455,8 +1458,8 @@ $font-size-description: 2vh;
 
                 .container-map__button--ice {
                     grid-area: ice;
-                    margin-top: 80px;
-                    margin-right: 2em;
+                    margin-top: 30px;
+
 
                     .button--ice {
                         background-color: $colorIce;
@@ -1466,7 +1469,7 @@ $font-size-description: 2vh;
 
                 .container-map__button--dark {
                     grid-area: dark;
-                    margin-top: 145px;
+                    margin-top: 30px;
                     margin-right: 1em;
 
                     .button--dark {
@@ -1478,7 +1481,6 @@ $font-size-description: 2vh;
                 .container-map__button--flying {
                     grid-area: flying;
                     margin-top: 2.5em;
-                    margin-right: 1em;
 
                     .button--flying {
                         background-color: $colorFly;
@@ -1510,6 +1512,7 @@ $font-size-description: 2vh;
 
                 .container-map__button--grass {
                     grid-area: grass;
+                    margin-top: 1em;
 
                     .button--grass {
                         background-color: $colorGrass;
@@ -1519,8 +1522,7 @@ $font-size-description: 2vh;
 
                 .container-map__button--ground {
                     grid-area: ground;
-                    margin-left: 3.5em;
-                    margin-bottom: 2em;
+                    margin-left: 1em;
 
                     .button--ground {
                         background-color: $colorGround;
@@ -1530,6 +1532,7 @@ $font-size-description: 2vh;
 
                 .container-map__button--normal {
                     grid-area: normal;
+                    margin-top: 2em;
 
                     .button--normal {
                         background-color: $colorNormal;
@@ -1539,6 +1542,7 @@ $font-size-description: 2vh;
 
                 .container-map__button--town {
                     grid-area: town;
+                    margin-top: 9em;
 
                     .button--town {
                         background-color: $colorTown;
@@ -1552,14 +1556,15 @@ $font-size-description: 2vh;
         .card-town {
             display: grid;
             grid-template-areas: ". title title . . . . . ."
-                ". description description . shop shop shop shop .";
-            grid-template-rows: repeat(2, auto);
+                ". description description description description description description description ."
+                ". shop shop shop shop shop shop shop .";
+            grid-template-rows: repeat(3, auto);
             grid-template-columns: repeat(9, 1fr);
 
 
             .card-town__title {
                 grid-area: title;
-                font-size: $font-size-cardTitle;
+                font-size: 35px;
             }
 
             .card-town__description {
@@ -1574,11 +1579,12 @@ $font-size-description: 2vh;
             grid-area: shop;
             border-radius: 25px;
             background: rgb(68, 90, 119);
+            margin-top: 2em;
 
 
             .shop__title {
                 color: white;
-                font-size: 5vh;
+                font-size: 4vh;
                 padding-top: 30px;
                 padding-left: 50px;
             }
@@ -1587,27 +1593,27 @@ $font-size-description: 2vh;
                 padding-right: 5vh;
                 padding-left: 5vh;
 
-                .items__title {
-                    display: flex;
-                    justify-content: space-around;
-                    padding: 20px;
+                // .items__title {
+                //     display: flex;
+                //     justify-content: space-around;
+                //     padding: 20px;
 
-                    .items__title--item {
-                        font-size: 2vh;
-                    }
+                //     .items__title--item {
+                //         font-size: 1vh;
+                //     }
 
-                    .items__title--name {
-                        font-size: 2vh;
-                    }
+                //     .items__title--name {
+                //         font-size: 2vh;
+                //     }
 
-                    .items__title--detail {
-                        font-size: 2vh;
-                    }
+                //     .items__title--detail {
+                //         font-size: 2vh;
+                //     }
 
-                    .items__title--price {
-                        font-size: 2vh;
-                    }
-                }
+                //     .items__title--price {
+                //         font-size: 2vh;
+                //     }
+                // }
 
                 .items__pokeball {
                     display: flex;
@@ -1615,7 +1621,9 @@ $font-size-description: 2vh;
 
                     .items__pokeball--img {
                         padding: 20px;
-                        padding-left: 40px;
+                        width: 50%;
+                        height: 50%;
+                        // padding-left: px;
 
                     }
 
@@ -1624,24 +1632,25 @@ $font-size-description: 2vh;
                         font-size: 2vh;
                         font-weight: bold;
                         align-items: center;
-                        margin-left: 68px;
+                        margin-left: 10px;
                         color: white;
 
                     }
 
                     .items__pokeball--detail {
                         font-style: italic;
-                        display: flex;
+                        display: none;
                         align-items: center;
-                        padding-left: 50px;
-                        padding-right: 40px;
+                        // padding-left: 50px;
+                        // padding-right: 40px;
                         color: white;
                     }
 
                     .items__pokeball--price {
                         display: flex;
                         align-items: center;
-                        padding-right: 50px;
+                        padding-left: 20px;
+                        padding-right: 20px;
                         color: white;
 
                     }
@@ -1654,7 +1663,8 @@ $font-size-description: 2vh;
 
                     .items__potion--img {
                         padding: 20px;
-                        padding-left: 50px;
+                        width: 45%;
+                        height: 45%;
 
                     }
 
@@ -1663,23 +1673,24 @@ $font-size-description: 2vh;
                         font-size: 2vh;
                         font-weight: bold;
                         align-items: center;
-                        margin-left: 90px;
+                        margin-left: 10px;
                         color: white;
                     }
 
                     .items__potion--detail {
                         font-style: italic;
-                        display: flex;
+                        display: none;
                         align-items: center;
-                        padding-left: 50px;
-                        padding-right: 40px;
+                        // padding-left: 50px;
+                        // padding-right: 40px;
                         color: white;
                     }
 
                     .items__potion--price {
                         display: flex;
                         align-items: center;
-                        padding-right: 50px;
+                        padding-left: 20px;
+                        padding-right: 20px;
                         color: white;
                     }
                 }
@@ -1688,19 +1699,20 @@ $font-size-description: 2vh;
 
         //!TODO
         .card-city {
-            margin-top: 10em;
+            margin-top: 3em;
             display: grid;
             grid-template-areas:
-                ". city-title city-title city-title . . . . ."
-                ". description description . shop shop shop shop ."
-                ". gymLeader gymLeader . team team team team ."
-                ". gymLeader gymLeader . team team team team .";
-            grid-template-rows: repeat(4, auto);
+                ". city-title city-title city-title city-title city-title city-title city-title ."
+                ". description description description description description description description ."
+                ". shop shop shop shop shop shop shop ."
+                ". gymLeader gymLeader gymLeader gymLeader gymLeader gymLeader gymLeader ."
+                ". team team team team team team team .";
+            grid-template-rows: repeat(5, auto);
             grid-template-columns: repeat(9, 1fr);
 
             .card-city__title {
                 grid-area: city-title;
-                font-size: $font-size-cardTitle;
+                font-size: 50px;
             }
 
             .card-city__description {
@@ -1715,7 +1727,7 @@ $font-size-description: 2vh;
 
                 .gym__title {
 
-                    font-size: $font-size-gymTitle;
+                    font-size: 30px;
                 }
 
                 .gym__leader {
@@ -1735,11 +1747,18 @@ $font-size-description: 2vh;
 
                         .leader__description--phrase {
                             font-style: italic;
+                            font-size: 13px;
                         }
 
                         .leader__description--badge {
                             font-weight: bold;
-                            padding: 10px;
+                            font-size: 13px;
+                            padding: 3px;
+                        }
+
+                        .gym__badge--img {
+                            width: 15%;
+                            margin-left: 5px;
                         }
                     }
                 }
@@ -1750,7 +1769,7 @@ $font-size-description: 2vh;
                 grid-area: team;
 
                 .team__title {
-                    font-size: $font-size-gymTitle;
+                    font-size: 30px;
                     border-bottom: 2px solid;
                     border-color: $colorNormal;
 
@@ -1775,7 +1794,8 @@ $font-size-description: 2vh;
                         }
 
                         .pokemon-card__details--type {
-                            width: 3%;
+                            width: 10%;
+                            margin-right: 0.5em;
                         }
                     }
 

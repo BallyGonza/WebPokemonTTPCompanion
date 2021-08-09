@@ -209,10 +209,9 @@
     font-weight: bold;
   }
   #profile .profile-card .profile-card__team {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 4;
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
     grid-area: team;
     margin-left: 3em;
     margin-top: 2em;
@@ -1430,11 +1429,11 @@
   #map .container-map .container-map__img {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: ". . . . . . . . ." ". . . . . . . . ." ". . . . . . . . ." ". . . . . . . . ." ". . . . . . . . ." ". . . . . . . . ." ". . . . . . . . ." ". . . . . . . . ." ". . . . . . . . ." ". . . . . . . . .";
-    -ms-grid-rows: (auto)[12];
-        grid-template-rows: repeat(12, auto);
-    -ms-grid-columns: (1fr)[8];
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: ". . . . . . . ice ." ". . dark . . . . . ." ". . . . . . . . ." ". . . . . . . . ." ". fighting . . . . flying . ." ". . . . . . . . ." ". . . . . . . . ." ". . . . . . . . ." ". . . bug . . . . ." ". . . . . . . . ." "ground . . . . . . grass ." ". . . . normal . . . ." ". . . . town . . . .";
+    -ms-grid-rows: (4vh)[15];
+        grid-template-rows: repeat(15, 4vh);
+    -ms-grid-columns: (5vh)[8];
+        grid-template-columns: repeat(8, 5vh);
     background-image: url(assets/images/map.jpeg);
     background-size: cover;
     width: 375px;
@@ -1442,17 +1441,20 @@
     margin-bottom: 5vh;
   }
   #map .container-map .container-map__img .container-map__button--ice {
+    -ms-grid-row: 1;
+    -ms-grid-column: 8;
     grid-area: ice;
-    margin-top: 80px;
-    margin-right: 2em;
+    margin-top: 30px;
   }
   #map .container-map .container-map__img .container-map__button--ice .button--ice {
     background-color: #4BD2C1;
     border-color: #4BD2C1;
   }
   #map .container-map .container-map__img .container-map__button--dark {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
     grid-area: dark;
-    margin-top: 145px;
+    margin-top: 30px;
     margin-right: 1em;
   }
   #map .container-map .container-map__img .container-map__button--dark .button--dark {
@@ -1460,15 +1462,18 @@
     border-color: #4B6AB3;
   }
   #map .container-map .container-map__img .container-map__button--flying {
+    -ms-grid-row: 5;
+    -ms-grid-column: 7;
     grid-area: flying;
     margin-top: 2.5em;
-    margin-right: 1em;
   }
   #map .container-map .container-map__img .container-map__button--flying .button--flying {
     background-color: #8AACE4;
     border-color: #8AACE4;
   }
   #map .container-map .container-map__img .container-map__button--fighting {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
     grid-area: fighting;
     margin-top: 60px;
     margin-right: 2em;
@@ -1478,6 +1483,8 @@
     border-color: #831b3f;
   }
   #map .container-map .container-map__img .container-map__button--bug {
+    -ms-grid-row: 9;
+    -ms-grid-column: 4;
     grid-area: bug;
     margin-left: 2em;
     margin-bottom: 1em;
@@ -1487,30 +1494,40 @@
     border-color: #84C400;
   }
   #map .container-map .container-map__img .container-map__button--grass {
+    -ms-grid-row: 11;
+    -ms-grid-column: 8;
     grid-area: grass;
+    margin-top: 1em;
   }
   #map .container-map .container-map__img .container-map__button--grass .button--grass {
     background-color: #35C04A;
     border-color: #35C04A;
   }
   #map .container-map .container-map__img .container-map__button--ground {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
     grid-area: ground;
-    margin-left: 3.5em;
-    margin-bottom: 2em;
+    margin-left: 1em;
   }
   #map .container-map .container-map__img .container-map__button--ground .button--ground {
     background-color: #E97333;
     border-color: #E97333;
   }
   #map .container-map .container-map__img .container-map__button--normal {
+    -ms-grid-row: 12;
+    -ms-grid-column: 5;
     grid-area: normal;
+    margin-top: 2em;
   }
   #map .container-map .container-map__img .container-map__button--normal .button--normal {
     background-color: #929BA3;
     border-color: #929BA3;
   }
   #map .container-map .container-map__img .container-map__button--town {
+    -ms-grid-row: 13;
+    -ms-grid-column: 5;
     grid-area: town;
+    margin-top: 9em;
   }
   #map .container-map .container-map__img .container-map__button--town .button--town {
     background-color: black;
@@ -1519,9 +1536,9 @@
   #map .card-town {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: ". title title . . . . . ." ". description description . shop shop shop shop .";
-    -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2, auto);
+        grid-template-areas: ". title title . . . . . ." ". description description description description description description description ." ". shop shop shop shop shop shop shop .";
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
     -ms-grid-columns: (1fr)[9];
         grid-template-columns: repeat(9, 1fr);
   }
@@ -1530,53 +1547,34 @@
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-area: title;
-    font-size: 8vh;
+    font-size: 35px;
   }
   #map .card-town .card-town__description {
     font-size: 2vh;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 7;
     grid-area: description;
     padding-top: 2vh;
   }
   #map .card__shop {
-    -ms-grid-row: 2;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 4;
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
     grid-area: shop;
     border-radius: 25px;
     background: #445a77;
+    margin-top: 2em;
   }
   #map .card__shop .shop__title {
     color: white;
-    font-size: 5vh;
+    font-size: 4vh;
     padding-top: 30px;
     padding-left: 50px;
   }
   #map .card__shop .shop__items {
     padding-right: 5vh;
     padding-left: 5vh;
-  }
-  #map .card__shop .shop__items .items__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 20px;
-  }
-  #map .card__shop .shop__items .items__title .items__title--item {
-    font-size: 2vh;
-  }
-  #map .card__shop .shop__items .items__title .items__title--name {
-    font-size: 2vh;
-  }
-  #map .card__shop .shop__items .items__title .items__title--detail {
-    font-size: 2vh;
-  }
-  #map .card__shop .shop__items .items__title .items__title--price {
-    font-size: 2vh;
   }
   #map .card__shop .shop__items .items__pokeball {
     display: -webkit-box;
@@ -1587,7 +1585,8 @@
   }
   #map .card__shop .shop__items .items__pokeball .items__pokeball--img {
     padding: 20px;
-    padding-left: 40px;
+    width: 50%;
+    height: 50%;
   }
   #map .card__shop .shop__items .items__pokeball .items__pokeball--name {
     display: -webkit-box;
@@ -1598,19 +1597,15 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 68px;
+    margin-left: 10px;
     color: white;
   }
   #map .card__shop .shop__items .items__pokeball .items__pokeball--detail {
     font-style: italic;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 50px;
-    padding-right: 40px;
     color: white;
   }
   #map .card__shop .shop__items .items__pokeball .items__pokeball--price {
@@ -1620,7 +1615,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: white;
   }
   #map .card__shop .shop__items .items__potion {
@@ -1633,7 +1629,8 @@
   }
   #map .card__shop .shop__items .items__potion .items__potion--img {
     padding: 20px;
-    padding-left: 50px;
+    width: 45%;
+    height: 45%;
   }
   #map .card__shop .shop__items .items__potion .items__potion--name {
     display: -webkit-box;
@@ -1644,19 +1641,15 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 90px;
+    margin-left: 10px;
     color: white;
   }
   #map .card__shop .shop__items .items__potion .items__potion--detail {
     font-style: italic;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 50px;
-    padding-right: 40px;
     color: white;
   }
   #map .card__shop .shop__items .items__potion .items__potion--price {
@@ -1666,44 +1659,44 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: white;
   }
   #map .card-city {
-    margin-top: 10em;
+    margin-top: 3em;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: ". city-title city-title city-title . . . . ." ". description description . shop shop shop shop ." ". gymLeader gymLeader . team team team team ." ". gymLeader gymLeader . team team team team .";
-    -ms-grid-rows: (auto)[4];
-        grid-template-rows: repeat(4, auto);
+        grid-template-areas: ". city-title city-title city-title city-title city-title city-title city-title ." ". description description description description description description description ." ". shop shop shop shop shop shop shop ." ". gymLeader gymLeader gymLeader gymLeader gymLeader gymLeader gymLeader ." ". team team team team team team team .";
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
     -ms-grid-columns: (1fr)[9];
         grid-template-columns: repeat(9, 1fr);
   }
   #map .card-city .card-city__title {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 7;
     grid-area: city-title;
-    font-size: 8vh;
+    font-size: 50px;
   }
   #map .card-city .card-city__description {
     font-size: 2vh;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 7;
     grid-area: description;
     padding-top: 2vh;
   }
   #map .card-city .card-city__gym {
     margin-top: 2vh;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
+    -ms-grid-row: 4;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 7;
     grid-area: gymLeader;
   }
   #map .card-city .card-city__gym .gym__title {
-    font-size: 6vh;
+    font-size: 30px;
   }
   #map .card-city .card-city__gym .gym__leader {
     display: -webkit-box;
@@ -1722,21 +1715,26 @@
   }
   #map .card-city .card-city__gym .gym__leader .leader__description .leader__description--phrase {
     font-style: italic;
+    font-size: 13px;
   }
   #map .card-city .card-city__gym .gym__leader .leader__description .leader__description--badge {
     font-weight: bold;
-    padding: 10px;
+    font-size: 13px;
+    padding: 3px;
+  }
+  #map .card-city .card-city__gym .gym__leader .leader__description .gym__badge--img {
+    width: 15%;
+    margin-left: 5px;
   }
   #map .card-city .gym__team {
     margin-top: 2vh;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 4;
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 7;
     grid-area: team;
   }
   #map .card-city .gym__team .team__title {
-    font-size: 6vh;
+    font-size: 30px;
     border-bottom: 2px solid;
     border-color: #929BA3;
   }
@@ -1765,7 +1763,8 @@
     font-weight: bold;
   }
   #map .card-city .gym__team .pokemon-card__pokemon .pokemon-card__details .pokemon-card__details--type {
-    width: 3%;
+    width: 10%;
+    margin-right: 0.5em;
   }
   #map .card-city .gym__team .pokemon-card__pokemon .pokemon-card__details--description {
     font-style: italic;
