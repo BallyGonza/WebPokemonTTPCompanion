@@ -1427,6 +1427,15 @@ $font-size-description: 2vh;
     }
 
     #map {
+
+
+        header {
+            .site__title {
+                font-size: 2vh;
+                font-weight: bold;
+            }
+        }
+
         .container-map {
             display: flex;
             justify-content: center;
@@ -2346,7 +2355,7 @@ $font-size-description: 2vh;
 
                 .name-banner__type--img {
                     width: 20%;
-                    margin-left: 280%;
+                    margin-left: 250%;
                 }
             }
 
@@ -2503,7 +2512,7 @@ $font-size-description: 2vh;
 
                 .name-banner__type--img {
                     width: 20%;
-                    margin-left: 280%;
+                    margin-left: 260%;
                 }
             }
 
@@ -2660,7 +2669,7 @@ $font-size-description: 2vh;
 
                 .name-banner__type--img {
                     width: 20%;
-                    margin-left: 280%;
+                    margin-left: 245%;
                 }
             }
 
@@ -2817,7 +2826,7 @@ $font-size-description: 2vh;
 
                 .name-banner__type--img {
                     width: 20%;
-                    margin-left: 280%;
+                    margin-left: 250%;
                 }
             }
 
@@ -2974,7 +2983,7 @@ $font-size-description: 2vh;
 
                 .name-banner__type--img {
                     width: 20%;
-                    margin-left: 280%;
+                    margin-left: 240%;
                 }
             }
 
@@ -3131,7 +3140,7 @@ $font-size-description: 2vh;
 
                 .name-banner__type--img {
                     width: 20%;
-                    margin-left: 280%;
+                    margin-left: 265%;
                 }
             }
 
@@ -3597,6 +3606,7 @@ $font-size-description: 2vh;
 
                     .pokemon-card__details--description {
                         font-style: italic;
+                        padding: 2%;
                     }
 
 

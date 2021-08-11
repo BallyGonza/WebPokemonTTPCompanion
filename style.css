@@ -1418,6 +1418,10 @@
     font-size: 2vh;
     font-weight: bold;
   }
+  #map header .site__title {
+    font-size: 2vh;
+    font-weight: bold;
+  }
   #map .container-map {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2307,7 +2311,7 @@
   }
   #team .card-team1 .card-team__name-banner .name-banner__type--img {
     width: 20%;
-    margin-left: 280%;
+    margin-left: 250%;
   }
   #team .card-team1 .card-team__name-back {
     font-size: 250px;
@@ -2478,7 +2482,7 @@
   }
   #team .card-team2 .card-team__name-banner .name-banner__type--img {
     width: 20%;
-    margin-left: 280%;
+    margin-left: 260%;
   }
   #team .card-team2 .card-team__name-back {
     font-size: 250px;
@@ -2649,7 +2653,7 @@
   }
   #team .card-team3 .card-team__name-banner .name-banner__type--img {
     width: 20%;
-    margin-left: 280%;
+    margin-left: 245%;
   }
   #team .card-team3 .card-team__name-back {
     font-size: 250px;
@@ -2820,7 +2824,7 @@
   }
   #team .card-team4 .card-team__name-banner .name-banner__type--img {
     width: 20%;
-    margin-left: 280%;
+    margin-left: 250%;
   }
   #team .card-team4 .card-team__name-back {
     font-size: 250px;
@@ -2991,7 +2995,7 @@
   }
   #team .card-team5 .card-team__name-banner .name-banner__type--img {
     width: 20%;
-    margin-left: 280%;
+    margin-left: 240%;
   }
   #team .card-team5 .card-team__name-back {
     font-size: 250px;
@@ -3163,7 +3167,7 @@
   }
   #team .card-team6 .card-team__name-banner .name-banner__type--img {
     width: 20%;
-    margin-left: 280%;
+    margin-left: 265%;
   }
   #team .card-team6 .card-team__name-back {
     font-size: 250px;
@@ -3632,6 +3636,7 @@
   }
   #map .card-city .gym__team .pokemon-card__pokemon .pokemon-card__details--description {
     font-style: italic;
+    padding: 2%;
   }
   #map .items__price--coinImg {
     width: 30px;
