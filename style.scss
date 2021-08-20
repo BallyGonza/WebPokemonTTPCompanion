@@ -290,7 +290,7 @@ $font-size-description: 2vh;
                     }
 
                     .card__select {
-                        margin-top: 1vh;
+                        margin-top: 2vh;
                     }
                 }
             }
@@ -1331,8 +1331,8 @@ $font-size-description: 2vh;
         }
 
         .type_ico {
-            height: 40px;
-            width: 40px;
+            height: 50px;
+            width: 50px;
         }
 
         .img_pokemon_pokedex {
@@ -1345,7 +1345,6 @@ $font-size-description: 2vh;
 
         .container-pokedex {
             .pokedex__card-pokedex--grass {
-
                 border-radius: 1em;
                 background-color: #7be28b;
                 padding-bottom: 1em;
@@ -1392,11 +1391,13 @@ $font-size-description: 2vh;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                padding: 2%;
 
                 .pokedex__name {
                     color: white;
-                    font-size: 25px;
+                    font-size: 15px;
                     font-weight: bold;
+
                 }
 
                 .pokedex__type {
@@ -1413,7 +1414,13 @@ $font-size-description: 2vh;
             padding: 5%;
 
             //!TODO Agregar Propiedades al boton.
-            .button__load-more {}
+            .button__load-more {
+                background-color: white;
+                color: black;
+                border: 2px solid #555555;
+                padding: 10%;
+            }
+
         }
 
         header {
@@ -1428,13 +1435,6 @@ $font-size-description: 2vh;
 
     #map {
 
-
-        header {
-            .site__title {
-                font-size: 2vh;
-                font-weight: bold;
-            }
-        }
 
         .container-map {
             display: flex;
@@ -1854,9 +1854,20 @@ $font-size-description: 2vh;
         align-items: center;
 
         .site__title {
-            font-size: 4vh;
+            font-size: 2vh;
+            font-weight: bold;
         }
     }
+
+    header {
+        grid-area: header;
+
+        .site__title {
+            font-size: 2vh;
+            font-weight: bold;
+        }
+    }
+
 
     nav {
         grid-area: nav;
@@ -3247,7 +3258,11 @@ $font-size-description: 2vh;
             padding: 5%;
 
             //!TODO Agregar Propiedades al boton.
-            .button__load-more {}
+            .button__load-more {
+                background-color: white;
+                color: black;
+                border: 2px solid #555555;
+            }
         }
     }
 

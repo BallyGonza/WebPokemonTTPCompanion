@@ -262,7 +262,7 @@
     padding-right: 2%;
   }
   #profile .profile-card .profile-card__trainers .trainers__container .card__select {
-    margin-top: 1vh;
+    margin-top: 2vh;
   }
   #team {
     display: -ms-grid;
@@ -1332,8 +1332,8 @@
             justify-content: flex-start;
   }
   #pokedex .type_ico {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
   }
   #pokedex .img_pokemon_pokedex {
     padding: 1em;
@@ -1390,10 +1390,11 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 2%;
   }
   #pokedex .container-pokedex .card-pokedex__name-type .pokedex__name {
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
   }
   #pokedex .container-pokedex .card-pokedex__name-type .pokedex__type .pokedex__type--ico {
@@ -1408,6 +1409,12 @@
             justify-content: center;
     padding: 5%;
   }
+  #pokedex .button .button__load-more {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 10%;
+  }
   #pokedex header {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -1415,10 +1422,6 @@
     grid-area: header;
   }
   #pokedex header .site__title {
-    font-size: 2vh;
-    font-weight: bold;
-  }
-  #map header .site__title {
     font-size: 2vh;
     font-weight: bold;
   }
@@ -1810,7 +1813,18 @@
             align-items: center;
   }
   header .site__title {
-    font-size: 4vh;
+    font-size: 2vh;
+    font-weight: bold;
+  }
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: header;
+  }
+  header .site__title {
+    font-size: 2vh;
+    font-weight: bold;
   }
   nav {
     -ms-grid-row: 2;
@@ -3267,6 +3281,11 @@
         -ms-flex-pack: center;
             justify-content: center;
     padding: 5%;
+  }
+  #pokedex .button .button__load-more {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
   }
   #map .container-map {
     display: -webkit-box;
